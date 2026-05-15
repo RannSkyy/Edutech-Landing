@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTeach — Platform Guru Modern</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">E</span>
+        <span>EduTeach</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#manfaat">Manfaat</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#harga">Harga</a></li>
+      </ul>
+      <a href="#daftar" class="btn-nav">Mulai Gratis</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#fitur">Fitur</a></li>
+      <li><a href="#manfaat">Manfaat</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
+      <li><a href="#harga">Harga</a></li>
+      <li><a href="#daftar" class="btn-mobile">Mulai Gratis</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Platform No.1 untuk Guru Indonesia
+      </div>
+      <h1 class="hero-title reveal">
+        Mengajar Lebih<br />
+        <em>Cerdas</em> &amp; Bermakna
+      </h1>
+      <p class="hero-sub reveal">
+        EduTeach hadir untuk membantu para guru merancang pembelajaran, mengelola kelas, 
+        dan menginspirasi siswa — semua dalam satu platform elegan.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#daftar" class="btn-primary">
+          <span>Mulai Mengajar</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#fitur" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/></svg>
+          Lihat Demo
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="12000">0</span><span class="stat-plus">+</span>
+          <p>Guru Aktif</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="340">0</span><span class="stat-plus">+</span>
+          <p>Sekolah Mitra</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+          <p>Kepuasan</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="dashboard-mockup">
+        <div class="dm-bar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="dm-content">
+          <div class="dm-sidebar">
+            <div class="dm-avatar"></div>
+            <div class="dm-nav-item active"></div>
+            <div class="dm-nav-item"></div>
+            <div class="dm-nav-item"></div>
+            <div class="dm-nav-item"></div>
+          </div>
+          <div class="dm-main">
+            <div class="dm-header-row">
+              <div class="dm-title-block">
+                <div class="dm-title-line"></div>
+                <div class="dm-sub-line"></div>
+              </div>
+              <div class="dm-badge-pill">Kelas 10A</div>
+            </div>
+            <div class="dm-cards">
+              <div class="dm-card c1">
+                <div class="dm-card-icon">📚</div>
+                <div class="dm-card-lines">
+                  <div></div><div></div>
+                </div>
+                <div class="dm-progress-bar"><div style="width:72%"></div></div>
+              </div>
+              <div class="dm-card c2">
+                <div class="dm-card-icon">✅</div>
+                <div class="dm-card-lines">
+                  <div></div><div></div>
+                </div>
+                <div class="dm-progress-bar"><div style="width:88%"></div></div>
+              </div>
+            </div>
+            <div class="dm-chart">
+              <div class="dm-chart-bar" style="height:55%"></div>
+              <div class="dm-chart-bar" style="height:80%"></div>
+              <div class="dm-chart-bar active" style="height:95%"></div>
+              <div class="dm-chart-bar" style="height:65%"></div>
+              <div class="dm-chart-bar" style="height:75%"></div>
+              <div class="dm-chart-bar" style="height:90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-card fc-1">
+        <div class="fc-icon">🏆</div>
+        <div>
+          <p class="fc-label">Nilai Rata-rata</p>
+          <p class="fc-val">92.4</p>
+        </div>
+      </div>
+      <div class="floating-card fc-2">
+        <div class="fc-icon">📝</div>
+        <div>
+          <p class="fc-label">Tugas Aktif</p>
+          <p class="fc-val">8 Tugas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos-strip">
+    <p class="logos-label">Dipercaya oleh sekolah-sekolah terbaik</p>
+    <div class="logos-track">
+      <div class="logos-inner">
+        <span>SMA Negeri 3</span>
+        <span>SMAN Unggulan</span>
+        <span>YPK Mandiri</span>
+        <span>Sekolah Alam</span>
+        <span>Bina Insani</span>
+        <span>Global School</span>
+        <span>SMA Taruna</span>
+        <span>Darul Ulum</span>
+        <!-- duplicate for loop -->
+        <span>SMA Negeri 3</span>
+        <span>SMAN Unggulan</span>
+        <span>YPK Mandiri</span>
+        <span>Sekolah Alam</span>
+        <span>Bina Insani</span>
+        <span>Global School</span>
+        <span>SMA Taruna</span>
+        <span>Darul Ulum</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR -->
+  <section class="fitur section" id="fitur">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Fitur Unggulan</span>
+        <h2>Semua yang Guru Butuhkan</h2>
+        <p>Dirancang khusus untuk mendukung proses belajar-mengajar yang modern dan efektif.</p>
+      </div>
+      <div class="fitur-grid">
+        <div class="fitur-card reveal" data-delay="0">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#4f7cff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Rencana Pembelajaran</h3>
+          </div>
+          <p>Buat RPP dan silabus dengan template cerdas yang sesuai kurikulum terbaru. Hemat waktu, tetap terstruktur.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">Kurikulum Merdeka</span>
+            <span class="fc-tag">K13</span>
+          </div>
+        </div>
+
+        <div class="fitur-card reveal" data-delay="100">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#f97316">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Manajemen Kelas</h3>
+          </div>
+          <p>Kelola absensi, jadwal, dan aktivitas kelas secara digital. Pantau perkembangan setiap siswa dengan mudah.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">Absensi Digital</span>
+            <span class="fc-tag">Jadwal Otomatis</span>
+          </div>
+        </div>
+
+        <div class="fitur-card reveal" data-delay="200">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#10b981">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <h3>Penilaian Otomatis</h3>
+          </div>
+          <p>Sistem penilaian cerdas yang mengolah nilai ujian, tugas, dan portofolio siswa menjadi laporan komprehensif.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">Auto Grading</span>
+            <span class="fc-tag">Laporan PDF</span>
+          </div>
+        </div>
+
+        <div class="fitur-card reveal" data-delay="300">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#a855f7">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <h3>Komunikasi Orang Tua</h3>
+          </div>
+          <p>Kirim perkembangan siswa langsung ke orang tua via notifikasi. Bangun kolaborasi yang kuat antara sekolah dan rumah.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">Notifikasi Real-time</span>
+            <span class="fc-tag">Laporan Bulanan</span>
+          </div>
+        </div>
+
+        <div class="fitur-card reveal" data-delay="400">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#ec4899">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3>Analitik Kelas</h3>
+          </div>
+          <p>Visualisasi data performa siswa secara real-time. Identifikasi siswa yang perlu perhatian ekstra dengan cepat.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">Grafik Interaktif</span>
+            <span class="fc-tag">AI Insight</span>
+          </div>
+        </div>
+
+        <div class="fitur-card reveal" data-delay="500">
+          <div class="fc-header">
+            <div class="fc-icon-wrap" style="--c:#0ea5e9">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            </div>
+            <h3>Bank Soal &amp; Materi</h3>
+          </div>
+          <p>Akses ribuan soal dan materi ajar yang telah dikurasi. Bagikan dan kolaborasi dengan guru lain di seluruh Indonesia.</p>
+          <div class="fc-footer">
+            <span class="fc-tag">10.000+ Soal</span>
+            <span class="fc-tag">Multi Format</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANFAAT / HOW IT WORKS -->
+  <section class="manfaat section" id="manfaat">
+    <div class="container">
+      <div class="manfaat-inner">
+        <div class="manfaat-text reveal">
+          <span class="section-tag">Cara Kerja</span>
+          <h2>Tiga Langkah Menuju Kelas Ideal</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">01</div>
+              <div class="step-body">
+                <h4>Buat Profil Guru</h4>
+                <p>Daftar gratis dalam 2 menit. Tambahkan mata pelajaran, tingkat kelas, dan sekolah Anda.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">02</div>
+              <div class="step-body">
+                <h4>Atur Kelas &amp; Materi</h4>
+                <p>Impor daftar siswa, buat jadwal, dan upload materi ajar. Semuanya tersimpan aman di cloud.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">03</div>
+              <div class="step-body">
+                <h4>Pantau &amp; Tingkatkan</h4>
+                <p>Gunakan laporan analitik untuk memahami kebutuhan siswa dan meningkatkan kualitas mengajar.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#daftar" class="btn-primary" style="display:inline-flex;margin-top:2rem">
+            <span>Coba Sekarang</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="manfaat-visual reveal">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-header">
+                <div class="pha-avatar"></div>
+                <div>
+                  <div class="pha-name">Selamat datang,</div>
+                  <div class="pha-title">Bu Sari 👋</div>
+                </div>
+                <div class="pha-bell">🔔</div>
+              </div>
+              <div class="phone-card today">
+                <p class="pc-label">Hari ini</p>
+                <div class="pc-item">
+                  <div class="pc-dot" style="background:#4f7cff"></div>
+                  <div>
+                    <p class="pc-name">Matematika — Kelas 10A</p>
+                    <p class="pc-time">07:30 – 09:00</p>
+                  </div>
+                </div>
+                <div class="pc-item">
+                  <div class="pc-dot" style="background:#10b981"></div>
+                  <div>
+                    <p class="pc-name">IPA Terpadu — Kelas 9B</p>
+                    <p class="pc-time">10:00 – 11:30</p>
+                  </div>
+                </div>
+                <div class="pc-item">
+                  <div class="pc-dot" style="background:#f97316"></div>
+                  <div>
+                    <p class="pc-name">Fisika — Kelas 11</p>
+                    <p class="pc-time">13:00 – 14:30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mini-stats">
+                <div class="pms">
+                  <p class="pms-num">32</p>
+                  <p class="pms-lab">Siswa</p>
+                </div>
+                <div class="pms">
+                  <p class="pms-num">94%</p>
+                  <p class="pms-lab">Hadir</p>
+                </div>
+                <div class="pms">
+                  <p class="pms-num">8</p>
+                  <p class="pms-lab">Tugas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manfaat-blob"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="testimoni section" id="testimoni">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimoni</span>
+        <h2>Kata Para Guru</h2>
+        <p>Lebih dari 12.000 guru telah merasakan perubahan nyata dalam cara mereka mengajar.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal" data-delay="0">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"EduTeach benar-benar mengubah cara saya mengelola kelas. RPP yang dulu butuh 3 jam, kini selesai dalam 30 menit. Lebih banyak waktu untuk siswa saya."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2)">SR</div>
+            <div>
+              <p class="testi-name">Sari Rahayu, S.Pd</p>
+              <p class="testi-school">Guru Matematika — SMAN 3 Bandung</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal featured" data-delay="150">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Fitur analitik kelas sangat membantu saya memahami perkembangan setiap siswa. Saya bisa memberikan perhatian yang tepat kepada yang membutuhkan."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#f97316,#ec4899)">BW</div>
+            <div>
+              <p class="testi-name">Budi Wicaksono, M.Pd</p>
+              <p class="testi-school">Kepala Sekolah — SMP Bina Insani</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" data-delay="300">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Komunikasi dengan orang tua siswa jadi sangat mudah. Mereka senang mendapat laporan perkembangan anak langsung di HP mereka setiap minggu."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#10b981,#0ea5e9)">DN</div>
+            <div>
+              <p class="testi-name">Dewi Nurani, S.Pd</p>
+              <p class="testi-school">Guru Bahasa Indonesia — SDN 01 Yogyakarta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARGA -->
+  <section class="harga section" id="harga">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Paket Harga</span>
+        <h2>Investasi untuk Masa Depan Siswa</h2>
+        <p>Mulai gratis, upgrade kapan saja. Tidak ada biaya tersembunyi.</p>
+      </div>
+      <div class="harga-grid">
+        <div class="harga-card reveal" data-delay="0">
+          <div class="harga-top">
+            <p class="harga-plan">Gratis</p>
+            <div class="harga-price">
+              <span class="price-currency">Rp</span>
+              <span class="price-amount">0</span>
+              <span class="price-period">/bulan</span>
+            </div>
+            <p class="harga-desc">Sempurna untuk mulai mengenal platform</p>
+          </div>
+          <ul class="harga-list">
+            <li><span class="hi">✓</span> 1 Kelas Aktif</li>
+            <li><span class="hi">✓</span> Absensi Digital</li>
+            <li><span class="hi">✓</span> 50 Soal dari Bank Soal</li>
+            <li><span class="hi">✓</span> Laporan Dasar</li>
+            <li class="disabled"><span class="hx">✗</span> Penilaian Otomatis</li>
+            <li class="disabled"><span class="hx">✗</span> Komunikasi Orang Tua</li>
+          </ul>
+          <a href="#daftar" class="btn-outline">Mulai Gratis</a>
+        </div>
+
+        <div class="harga-card popular reveal" data-delay="150">
+          <div class="popular-badge">Paling Populer</div>
+          <div class="harga-top">
+            <p class="harga-plan">Profesional</p>
+            <div class="harga-price">
+              <span class="price-currency">Rp</span>
+              <span class="price-amount">89.000</span>
+              <span class="price-period">/bulan</span>
+            </div>
+            <p class="harga-desc">Untuk guru yang serius tingkatkan kualitas</p>
+          </div>
+          <ul class="harga-list">
+            <li><span class="hi">✓</span> Kelas Tak Terbatas</li>
+            <li><span class="hi">✓</span> Absensi + Analitik</li>
+            <li><span class="hi">✓</span> 10.000+ Bank Soal</li>
+            <li><span class="hi">✓</span> Penilaian Otomatis</li>
+            <li><span class="hi">✓</span> Komunikasi Orang Tua</li>
+            <li><span class="hi">✓</span> Laporan Komprehensif PDF</li>
+          </ul>
+          <a href="#daftar" class="btn-primary" style="width:100%;justify-content:center">Coba 14 Hari Gratis</a>
+        </div>
+
+        <div class="harga-card reveal" data-delay="300">
+          <div class="harga-top">
+            <p class="harga-plan">Sekolah</p>
+            <div class="harga-price">
+              <span class="price-currency">Rp</span>
+              <span class="price-amount">599.000</span>
+              <span class="price-period">/bulan</span>
+            </div>
+            <p class="harga-desc">Solusi lengkap untuk seluruh institusi</p>
+          </div>
+          <ul class="harga-list">
+            <li><span class="hi">✓</span> Semua fitur Profesional</li>
+            <li><span class="hi">✓</span> Hingga 50 Guru</li>
+            <li><span class="hi">✓</span> Dashboard Admin Sekolah</li>
+            <li><span class="hi">✓</span> API Integrasi Dapodik</li>
+            <li><span class="hi">✓</span> Dukungan Prioritas</li>
+            <li><span class="hi">✓</span> Pelatihan Onboarding</li>
+          </ul>
+          <a href="#daftar" class="btn-outline">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="daftar">
+    <div class="cta-bg">
+      <div class="cta-orb"></div>
+    </div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="section-tag" style="color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.2)">Bergabung Sekarang</span>
+        <h2>Siap Mengubah Cara Anda Mengajar?</h2>
+        <p>Bergabunglah dengan ribuan guru yang sudah merasakan perbedaan nyata. Daftar gratis, tidak perlu kartu kredit.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" placeholder="Masukkan email Anda..." class="cta-input" required />
+          <button type="submit" class="btn-primary">
+            <span>Daftar Gratis</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <p class="cta-note">✓ Gratis 14 hari &nbsp;·&nbsp; ✓ Tanpa kartu kredit &nbsp;·&nbsp; ✓ Batalkan kapan saja</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-mark">E</span>
+            <span>EduTeach</span>
+          </a>
+          <p>Platform digital terpercaya untuk guru Indonesia yang ingin mengajar lebih cerdas dan bermakna.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="fl-col">
+            <h5>Platform</h5>
+            <a href="#">Fitur</a>
+            <a href="#">Harga</a>
+            <a href="#">Demo</a>
+            <a href="#">Pembaruan</a>
+          </div>
+          <div class="fl-col">
+            <h5>Sumber Daya</h5>
+            <a href="#">Blog Pendidikan</a>
+            <a href="#">Panduan Guru</a>
+            <a href="#">Bank Soal</a>
+            <a href="#">Webinar</a>
+          </div>
+          <div class="fl-col">
+            <h5>Perusahaan</h5>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Karier</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Kontak</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EduTeach. Dibuat dengan ❤️ untuk guru Indonesia.</p>
+        <p>Platform Pendidikan Digital Terpercaya</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS TOAST -->
+  <div class="toast" id="toast">
+    <span>🎉</span>
+    <span>Berhasil! Cek email Anda untuk langkah selanjutnya.</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
